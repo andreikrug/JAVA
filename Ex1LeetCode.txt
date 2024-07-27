@@ -1,0 +1,13 @@
+class Solution {
+    public boolean isPalindrome(int x) 
+    {   
+        String num = Integer.toString(x);
+        String fraseInvertida = new StringBuilder(num).reverse().toString();
+
+        if(num.equalsIgnoreCase(fraseInvertida ) ){
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
